@@ -489,9 +489,6 @@ class UI(tk.Tk):
                 city2 = self.cities_list[ant[i + 1]]
                 total_distance += calculate_distance(city1, city2)
 
-            # Closes the loop by connecting the last city to the first
-            total_distance += calculate_distance(self.cities_list[ant[-1]], self.cities_list[ant[0]])
-
             return total_distance
 
         # Determines the next path of the ant
